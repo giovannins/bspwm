@@ -1,0 +1,3 @@
+#! /bin/sh
+
+# THIS WILL BE AN INSTALLER ONE DAY
