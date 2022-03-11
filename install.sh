@@ -12,6 +12,7 @@ echo "User's default dirs created!"
 
 # COPY DOTFILE/HOME TO SYSTEM $HOME
 cp $DOTHOME/.Xresources $DOTHOME/.bashrc $DOTHOME/.xinitrc $HOME
+cp $DOTHOME/.wallpaper/*.jpg $HOME/.wallpaper/ & mkdir -p $HOME/.wallpaper 
 echo "\$HOME copy!"
 
 # Apply Xresources
