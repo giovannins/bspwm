@@ -1,11 +1,10 @@
 # .bashrc
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+PS1='\[\033[38;5;4m\]\w\[$(tput sgr0)\] > \[$(tput sgr0)\]'
 
 alias ls='ls --color=auto'
 alias ll='ls -lha'
 alias l='ls -lh'
 alias b='vim ~/.config/bspwm/bspwmrc'
 alias sx='vim ~/.config/sxhkd/sxhkdrc'
-PS1='[\u@\h \W]\$ '
+[[ $- != *i* ]] && return
