@@ -1,5 +1,6 @@
 #! /bin/sh
 
+# BSPWM CONFIG
 bspc monitor -d I II III IV V
 
 bspc config border_width 2
@@ -10,9 +11,10 @@ bspc config focus_follows_pointer true
 bspc config borderless_monocle true
 bspc config single_monocle true
 
-# A U T O L O A D
+# AUTOLOAD
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
-~/.screenlayout/screen.sh
+$HOME/.screenlayout/screen.sh &
+picom --experimental-backends &
+$HOME/.config/polybar/launch.sh
 
