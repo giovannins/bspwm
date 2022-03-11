@@ -1,4 +1,7 @@
 *.scrollBar: false
+*.font: xft:Hack Nerd Font:size=9
+*.letterSpace: 0
+*.internalBorder: 12
 
 ! special
 *.foreground:   #a39a90
