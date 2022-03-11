@@ -23,6 +23,8 @@ mkdir -p $HOME/.config/bspwm/ $HOME/.config/sxhkd/ $HOME/.config/polybar/ $HOME/
 echo "Created folders!"
 cp $DOTCONFIG/bspwm/bspwmrc $HOME/.config/bspwm/
 cp $DOTCONFIG/sxhkd/sxhkdrc $HOME/.config/sxhkd/
-cp $DOTCONFIG/polybar/* $HOME/.config/polybar/
+cp $DOTCONFIG/polybar/config.ini $HOME/.config/polybar/
+cp $DOTCONFIG/polybar/launch.sh $HOME/.config/polybar/
+chmod +x $HOME/.config/polybar/launch.sh
 cp $DOTCONFIG/picom/picom.conf $HOME/.config/picom/
 echo ".Config copy!"
