@@ -34,11 +34,13 @@ You can easy use it `chmod +x install.sh` then `./install.sh`. You will need sud
 > - feh
 > - git
 > - htop
+> - lxappearance
 > - mpv
 > - neofetch
 > - neovim
 > - nerd-fonts
 > - NetworkManager
+> - nitrogen
 > - picom
 > - polybar
 > - pulseaudio

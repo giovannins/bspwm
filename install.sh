@@ -3,7 +3,7 @@ DOTHOME=$HOME/dotfiles/home/
 DOTCONFIG=$HOME/dotfiles/.config/
 
 # INSTALL ALL DEPENDENCES
-sudo xbps-install -Suy arandr base-devel bash-completion bspwm dmenu feh git htop mpv neofetch neovim nerd-fonts NetworkManager picom polybar pulseaudio python3 python3-pip rxvt-unicode sxhkd Thunar xdg-user-dirs xorg xrandr &&
+sudo xbps-install -Suy arandr base-devel bash-completion bspwm dmenu feh git htop lxappearance mpv neofetch neovim nerd-fonts NetworkManager nitrogen picom polybar pulseaudio python3 python3-pip rxvt-unicode sxhkd Thunar xdg-user-dirs xorg xrandr &&
 clear && echo "Dependences installed!"
 
 # CREATE USER'S DIRECTORY
