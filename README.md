@@ -18,37 +18,38 @@ This files was made in a **Virtual Machine** so maybe need more edits and attent
 - HDD: Dinamic 28GBs (VDI).
 
 ---
-## Dependences
+## Auto-installer
 
-On this repositiry there are an installer* of dependences to make more easy have everything done quick.
+On this repositiry there are an auto-installer* to make more easy have everything done quick.
 
-You can easy use it `chmod +x dependences.sh` then `./dependences.sh`. You will need sudo or root
+You can easy use it `chmod +x install.sh` then `./install.sh`. You will need sudo or root
 
 ### Dependences List
 
-> - git
-> - neovim
-> - bash-completion
-> - NetworkManager
 > - arandr
+> - base-devel
+> - bash-completion
 > - bspwm
-> - sxhkd
 > - dmenu
 > - feh
-> - picom
-> - base-devel
-> - xorg
-> - neofetch
+> - git
 > - htop
+> - mpv
+> - neofetch
+> - neovim
 > - nerd-fonts
+> - NetworkManager
+> - picom
+> - polybar
+> - pulseaudio
 > - python3
 > - python3-pip
-> - rofi
 > - rxvt-unicode
-> - xrandr
-> - xdg-user-dirs
+> - sxhkd
 > - Thunar
-> - polybar
+> - xdg-user-dirs
+> - xorg
+> - xrandr
 
 <small>
 *This installer only work in Void Linux
