@@ -1,17 +1,28 @@
 #! /bin/sh 
-DOTHOME="home"
-DOTCONFIG=".config"
+DOTHOME=$HOME/dotfiles/home/
+DOTCONFIG=$HOME/dotfiles/.config/
 
 # INSTALL ALL DEPENDENCES
-# exec sudo xbps-install -Suy arandr base-devel bash-completion bspwm dmenu feh git htop mpv neofetch neovim nerd-fonts NetworkManager picom polybar pulseaudio python3 python3-pip rxvt-unicode sxhkd Thunar xdg-user-dirs xorg xrandr
+sudo xbps-install -Suy arandr base-devel bash-completion bspwm dmenu feh git htop mpv neofetch neovim nerd-fonts NetworkManager picom polybar pulseaudio python3 python3-pip rxvt-unicode sxhkd Thunar xdg-user-dirs xorg xrandr &&
+clear && echo "Dependences installed!"
 
 # CREATE USER'S DIRECTORY
-# exec xdg-user-dirs-update $HOME
+xdg-user-dirs-update $HOME
+echo "User's default dirs created!"
 
 # COPY DOTFILE/HOME TO SYSTEM $HOME
-exec cp $DOTHOME/.Xresources $DOTHOME/.bashrc $DOTHOME/.xinitrc $HOME
+cp $DOTHOME/.Xresources $DOTHOME/.bashrc $DOTHOME/.xinitrc $HOME
+echo "\$HOME copy!"
+
+# Apply Xresources
+xrdb $HOME/.Xresources
+echo "Xresources configurate!"
 
 # COPY DOTFILES/.CONFIG FILES TO THE SYSTEM'S $HOME/.CONFIG
-exec mkdir $HOME/.config/bspwm/ $HOME/.config/sxhkd/ $HOME/.config/polybar/
-exec cp $DOTCONFIG/bspwm/bspwmrc $HOME/.config/bspwm/
-exec cp $DOTCONFIG/sxhkd/sxhkdrc $HOME/.config/sxhkd/
+mkdir -p $HOME/.config/bspwm/ $HOME/.config/sxhkd/ $HOME/.config/polybar/ $HOME/.config/picom
+echo "Created folders!"
+cp $DOTCONFIG/bspwm/bspwmrc $HOME/.config/bspwm/
+cp $DOTCONFIG/sxhkd/sxhkdrc $HOME/.config/sxhkd/
+cp $DOTCONFIG/polybar/* $HOME/.config/polybar/
+cp $DOTCONFIG/picom/picom.conf $HOME/.config/picom/
+echo ".Config copy!"
