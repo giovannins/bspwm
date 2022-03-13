@@ -49,6 +49,9 @@ You can easy use it `chmod +x install.sh` then `./install.sh`. You will need sud
 > - rxvt-unicode
 > - sxhkd
 > - Thunar
+> - thunar-archive-plugin
+> - thunar-media-tags-plugin
+> - thunar-volman
 > - xdg-user-dirs
 > - xorg
 > - xrandr
