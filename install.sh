@@ -30,4 +30,4 @@ chmod +x $HOME/.config/polybar/launch.sh
 cp $DOTCONFIG/picom/picom.conf $HOME/.config/picom/
 echo ".Config copy!"
 echo "_________________________________________"
-echo "Please run 'startx' then with 'super + enter' run the pos-install script"
+echo "Your base system is installed! Now you can run 'startx' or reboot and login to get into"
