@@ -1,42 +1,41 @@
 *.scrollBar: false
-*.font: xft:Hack Nerd Font:size=9
+*.font: xft:MesloLGS NF:size=9
 *.letterSpace: 0
 *.internalBorder: 12
 
 ! special
-*.foreground:   #a39a90
-*.background:   #16130f
-*.cursorColor:  #a39a90
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
 
 ! black
-*.color0:       #16130f
-*.color8:       #5a5047
+*.color0:       #282828
+*.color8:       #494949
 
 ! red
-*.color1:       #826d57
-*.color9:       #826d57
+*.color1:       #b76969
+*.color9:       #b87e7e
 
 ! green
-*.color2:       #57826d
-*.color10:      #57826d
+*.color2:       #719d72
+*.color10:      #839d84
 
 ! yellow
-*.color3:       #6d8257
-*.color11:      #6d8257
+*.color3:       #909858
+*.color11:      #919864
 
 ! blue
-*.color4:       #6d5782
-*.color12:      #6d5782
+*.color4:       #68668f
+*.color12:      #73718f
 
 ! magenta
-*.color5:       #82576d
-*.color13:      #82576d
+*.color5:       #966894
+*.color13:      #987397
 
 ! cyan
-*.color6:       #576d82
-*.color14:      #576d82
+*.color6:       #688891
+*.color14:      #758c93
 
 ! white
-*.color7:       #a39a90
-*.color15:      #dbd6d1
-
+*.color7:       #8e8e8e
+*.color15:      #aeaeae
