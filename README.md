@@ -55,6 +55,7 @@ You can easy use it `chmod +x install.sh` then `./install.sh`. You will need sud
 > - xdg-user-dirs
 > - xorg
 > - xrandr
+> - zsh
 
 <small>
 *This installer only work in Void Linux

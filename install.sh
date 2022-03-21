@@ -3,7 +3,7 @@ DOTHOME=$HOME/dotfiles/home/
 DOTCONFIG=$HOME/dotfiles/.config/
 
 # INSTALL ALL DEPENDENCES
-sudo xbps-install -Suy arandr base-devel bash-completion bspwm dmenu feh git htop lxappearance mpv neofetch neovim nerd-fonts NetworkManager nitrogen picom polybar pulseaudio python3 python3-pip rxvt-unicode sxhkd Thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman xdg-user-dirs xorg xrandr &&
+sudo xbps-install -Suy arandr base-devel bash-completion bspwm dmenu feh git htop lxappearance mpv neofetch neovim nerd-fonts NetworkManager nitrogen picom polybar pulseaudio python3 python3-pip rxvt-unicode sxhkd Thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman xdg-user-dirs xorg xrandr zsh &&
 clear && echo "Dependences installed!"
 
 # CREATE USER'S DIRECTORY
@@ -29,5 +29,11 @@ cp $DOTCONFIG/polybar/launch.sh $HOME/.config/polybar/
 chmod +x $HOME/.config/polybar/launch.sh
 cp $DOTCONFIG/picom/picom.conf $HOME/.config/picom/
 echo ".Config copy!"
+
+# ZSH
+chsh -s /bin/zsh 
+
+echo 'Please run: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+zsh
 echo "_________________________________________"
 echo "Your base system is installed! Now you can run 'startx' or reboot and login to get into"

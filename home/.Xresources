@@ -1,6 +1,6 @@
 *.scrollBar: false
-*.font: xft:MesloLGS NF:size=9
-*.letterSpace: 0
+*.font: xft:MesloLGS Nerd Font:size=9
+*.letterSpace: 1
 *.internalBorder: 12
 
 ! special

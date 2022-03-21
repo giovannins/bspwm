@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # BSPWM CONFIG
-bspc monitor -d I II III IV V
+bspc monitor -d   III IV V
 
 bspc config border_width 2
 bspc config window_gap 6
@@ -20,5 +20,6 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.screenlayout/screen.sh &
 nitrogen --set-scaled --random $HOME/.wallpaper/ &
 picom --experimental-backends &
-$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
+xsetroot -cursor_name left_ptr
 
